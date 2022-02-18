@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="card align-items-center bg-light">
+        <div class="card-block text-center pb-1">
+            <h5 class="card-title">{{title}}</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Posted by: {{user.username}} on {{format_date created_at}}</h5>
+            <p class="card-text bg-light">{{content}}</p>
+            <a href="/post/{{id}}" class="btn btn-primary">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        </div>
+    </div>
+</div>
