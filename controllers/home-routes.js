@@ -43,7 +43,7 @@ router.get('/', (req, res) => {
       });
   });
 
-  //redirect to login screen
+  
   router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
