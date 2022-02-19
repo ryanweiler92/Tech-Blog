@@ -1,0 +1,32 @@
+<div class="container mt-4 bg-light rounded d-none" id="form-container">
+    <form class="pb-2" id="post-form">
+        <div class="mb-3 pt-2">
+            <h3>Create New Post</h3>
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="post-title" name="title" placeholder="Title">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea class="form-control" id="post-content" name="content" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary" id="submit-post-btn">Submit</button>
+        </div>
+    </form>
+</div>
+
+<div class="container mt-2 mb-2 d-flex justify-content-center">
+    <button type="button" class="btn btn-primary btn-lg" id="new-post-btn">+ New Post</button>
+</div>
+
+<ol class="post-list list-group bg-info">
+  {{#each posts as |post|}}
+  <li class="list-group-item bg-info">
+    {{> post-info post }}
+  </li>
+  {{/each}}
+</ol>
+
+<script src="/javascript/new-post.js"></script>
