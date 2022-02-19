@@ -1,5 +1,4 @@
 function newPostFormDisplay() {
-
     document.getElementById('form-container').setAttribute("class", "container mt-4 bg-light rounded")
 };
 
@@ -19,14 +18,12 @@ async function newFormHandler(event) {
         'Content-Type': 'application/json'
       }
     });
-  
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
       alert(response.statusText);
     }
   }
-
 
 document.querySelector('#submit-post-btn').addEventListener('click', newFormHandler);
 document.querySelector('#new-post-btn').addEventListener('click', newPostFormDisplay);
