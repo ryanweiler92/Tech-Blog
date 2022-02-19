@@ -1,0 +1,20 @@
+<div class="container mt-4 bg-light rounded" id="form-container">
+    <form class="pb-2" id="post-form">
+        <div class="mb-3 pt-2">
+            <h3>Edit Post</h3>
+        </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="post-title" name="title" value="{{post.title}}" placeholder="Title">
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea class="form-control" id="post-content" name="content" rows="3">{{post.content}}</textarea>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary" id="save-post-btn">Save</button>
+        </div>
+    </form>
+</div>
+
+<script src="/javascript/edit-post.js"></script>
