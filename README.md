@@ -18,7 +18,7 @@ This application allows many users to create a username and password to create, 
 * [License](#license)
 
 ## Installation
-The installation process is very simple. First you will need to download the repository from GitHub. Second you will have to make sure that you have node.js installed. Then open the terminal in your prefered method and call Node Index.js to begin the prompt process.
+No installation is required. Simply access the application link above and use the application from the browser.
 
 ## Usage
 ![screenshot](./assets/images/screenshot.jpg)
