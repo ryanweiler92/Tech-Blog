@@ -25,8 +25,7 @@
   {{#each posts as |post|}}
   <li class="list-group-item bg-info">
     {{> post-info post }}
-    
-    <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    <a href="/dashboard/edit/{{post.id}}" class="btn btn-primary btn-lg mt-2">Edit Post</a>
   </li>
   {{/each}}
 </ol>
